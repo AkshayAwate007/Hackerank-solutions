@@ -1,0 +1,47 @@
+
+import java.util.*;
+import java.io.*;
+
+class Permute{
+    public String per(String s1,String s2)
+    {
+        char A[]=s1.toCharArray();
+         Arrays.sort(A);
+          String str1=Arrays.toString(A);
+        char B[]=s2.toCharArray();
+         Arrays.sort(B);
+       
+        String str2=Arrays.toString(B);
+       
+       
+        if(str1.equals(str2)==true)
+        {
+            return "YES";
+        }
+        else
+        {
+             return "NO";
+        }
+    }
+    
+    
+    
+    
+}
+
+class TestClass {
+    public static void main(String args[] ) throws Exception {
+       
+        Scanner s = new Scanner(System.in);
+        int t=s.nextInt();
+        Permute a=new Permute();
+        while(t-->=1)
+        {
+         String S1=s.next();
+          String S2=s.next();
+          String st=a.per(S1,S2);
+          System.out.println(st);
+        }
+
+    }
+}
