@@ -1,0 +1,48 @@
+import java.util.*;
+import java.util.Arrays.*;
+import java.util.Scanner;
+
+
+class Micro 
+{
+	public static void main(String[] args) 
+	{
+		  Scanner s=new Scanner(System.in);
+		  
+		  int t=s.nextInt();
+		  while(t-->0)
+		  {
+		    int N=s.nextInt();
+		    int k=s.nextInt();
+		    int a[]=new int[N];
+		     a[0]=s.nextInt();
+		     int min=a[0];
+		    for(int i=1;i<a.length;i++)
+		    {
+		        
+		        a[i]=s.nextInt();
+		       
+		        if(a[i]<min)
+		        {
+		            min=a[i];
+		        }
+		        
+		    }
+		   
+		    if(k-min>0)
+		    {
+		        System.out.println(k-min);
+		    }
+		    else
+		    {
+		        System.out.println(0);
+		    }
+		    
+
+		  }
+
+	}
+}
+
+    
+
