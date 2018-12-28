@@ -1,0 +1,56 @@
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.*;
+import java.io.*;
+class TestClass {
+    public static void main(String args[] ) throws Exception {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+       StringTokenizer st=new StringTokenizer(br.readLine());
+       int N=Integer.parseInt(st.nextToken());
+       int Q=Integer.parseInt(st.nextToken());
+       int a[]=new int[N];
+        StringTokenizer st1=new StringTokenizer(br.readLine());
+        for(int i=0;i<N;i++)
+        {
+            a[i]=Integer.parseInt(st1.nextToken());
+        }
+       while(Q-->0)
+       {
+            StringTokenizer stt=new StringTokenizer(br.readLine());
+            int q=Integer.parseInt(stt.nextToken());
+            if(q==1)
+            {
+               int i=Integer.parseInt(stt.nextToken()); 
+               i--;
+               if(a[i]==0)
+               {
+                   a[i]=1;
+               }
+               else
+               {
+                  a[i]=0; 
+               }
+            }
+           else
+           {
+                int q1=Integer.parseInt(stt.nextToken());
+               int q2=Integer.parseInt(stt.nextToken());
+               q2--;
+               if(a[q2]%2==0)
+               {
+                    System.out.println("EVEN");
+               }
+               else
+               {
+                   System.out.println("ODD");
+               }
+            }
+               
+           }
+           
+           
+       }
+       
+    }
+
