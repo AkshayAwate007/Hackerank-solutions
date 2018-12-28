@@ -1,0 +1,32 @@
+
+import java.util.*;
+class TestClass {
+    public static void main(String args[] ) throws Exception {
+       
+        Scanner s = new Scanner(System.in);
+        String s1=s.next();
+        int x=0,y=0;
+        for(int i=0;i<s1.length();i++)
+        {
+            if(s1.charAt(i)=='U')
+            {
+                y++;
+            }
+            else if(s1.charAt(i)=='D')
+            {
+                y--;
+            }
+            else if(s1.charAt(i)=='R')
+            {
+                x++;
+            } 
+            else if(s1.charAt(i)=='L')
+            {
+                x--;
+            }
+        }
+        System.out.println(x+" "+y);
+        
+        
+    }
+}
