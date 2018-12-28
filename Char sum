@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class TestClass {
+    public static void main(String args[] ) throws Exception {
+       
+        Scanner s = new Scanner(System.in);
+        String sc=s.nextLine();
+        int w=0;
+        char c='a';
+        for(int i=0;i<sc.length();i++)
+        {
+            w=w+((int)sc.charAt(i)-(int)c+1);
+        }
+        System.out.print(w);
+    }
+}
