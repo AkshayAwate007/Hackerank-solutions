@@ -1,0 +1,25 @@
+
+import java.util.*;
+ 
+
+class TestClass {
+    public static void main(String args[] ) throws Exception {
+        
+        Scanner s = new Scanner(System.in);
+        int n=s.nextInt();
+        float pi=22/7f;
+        int toffee=0;
+        while(n-->0)
+        {
+            float r=s.nextInt();
+            float x=s.nextInt();
+            float c=2*pi*r;
+            float d=100*x;
+            if(d>=c)
+            {
+                toffee++;
+            }
+        }
+        System.out.println(toffee);
+    }
+}
